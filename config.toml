@@ -1,0 +1,50 @@
+baseURL = "https://blog.rdtr.net/"
+languageCode = "en-us"
+title = "MY MILEAGE MAY VARY"
+theme = "hermit"
+
+pygmentsCodefences  = true
+pygmentsUseClasses  = true
+hasCJKLanguage = true
+rssLimit = 10
+
+[permalinks]
+  posts = "/:year/:month/:filename/"
+
+[author]
+  name = "redtree"
+
+[taxonomies]
+  tag = "tags"
+  categoy = ""  # Categories are disabled by default.
+
+[params]
+  dateform        = "Jan 2, 2006"
+  dateformShort   = "Jan 2"
+  dateformNum     = "2006-01-02"
+  dateformNumTime = "2006-01-02 15:04 -0700"
+
+  # Social Icons
+  # Check https://github.com/Track3/hermit#social-icons for more info.
+  [[params.social]]
+    name = "twitter"
+    url = "https://twitter.com/_rdtr"
+
+  [[params.social]]
+    name = "instagram"
+    url = "https://www.instagram.com/redtree1112/"
+
+  [[params.social]]
+    name = "github"
+    url = "https://github.com/rdtr"
+
+[menu]
+  [[menu.main]]
+    name = "Posts"
+    url = "/posts/"
+    weight = 10
+
+  [[menu.main]]
+    name = "About"
+    url = "/about-hugo/"
+    weight = 20
