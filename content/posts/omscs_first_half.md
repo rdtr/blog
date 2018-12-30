@@ -2,7 +2,7 @@
 title: "GTOMSCS 前半戦振り返り"
 slug: "gtomscs_first_half_semesters"
 date: 2018-12-29T02:02:17-08:00
-draft: true
+draft: false
 toc: false
 featuredImg: "https://en.wikipedia.org/wiki/File:Georgia_Tech_logo.svg"
 tags: 
@@ -11,7 +11,7 @@ tags:
 
 ## What is GTOMSCS ?
 
-[Georgia Institute of Technology](https://www.gatech.edu/)がMOOCSのスタートアップ、[Udacity](https://www.udacity.com/)と提携して提供するオンライン形式のコンピュータサイエンス専攻コース。以下のような特徴があります。
+[Georgia Institute of Technology](https://www.gatech.edu/)がMOOCSのスタートアップ、[Udacity](https://www.udacity.com/)と提携して提供するオンライン形式のコンピュータサイエンス専攻修士課程コース。以下のような特徴があります。
 
 - 完全オンライン、フルタイムで働いている社会人が主な対象
 - 授業はすべて録画済みのビデオ講義
@@ -65,7 +65,7 @@ clientはraw画像を投げるのでserverは圧縮した画像を返す（圧�
 
 これも普段からC/C++でがりがり書いてる人には物足りない気はするんですが、個人的にはCでmutexとcondition variable使ってmaster-workerパターンのmulti thread処理を書くとかっていうのは良い経験になったと思ってます。
 
-だいぶconcurrency系の内容にフォーカスがあたっていて、Node.jsなんかで有名なEvent Driven Modelの論文 <sup>[1](#event_driven_model_paper)</sup> とかを読む機会があったのも <i class="far fa-thumbs-up"></i> 。  OSの基礎の基礎を総復習できたという意味で <i class="far fa-thumbs-up"></i> <i class="far fa-thumbs-up"></i>。
+だいぶconcurrency系の内容にフォーカスがあたっていて、Node.jsなんかで有名なEvent Driven Modelの論文 <sup>[1](#event_driven_model_paper)</sup> とかを読む機会があったのも良し。OSの基礎の基礎を総復習できたという意味でも良かったです。
 欲を言うとファイルシステムとかもcoding assignmentがあればな〜というところ。講義内容は良かったですが、結局コード書かないと知識が定着しないように思います。
 
 ちなみにこのコースの直前に <i class="fas fa-baby"></i> が産まれたので、[flux](https://justgetflux.com/)を使って夜は画面をDarkroomモードにして毎日3:00くらいまで、<i class="fas fa-baby"></i> が起きるたびに中断しつつ講義を見たり宿題をやっていたのを覚えています。
@@ -91,10 +91,10 @@ VM上でWindowsマシンを動かして、その上でMalwareが複数動いて�
 (3) RSA暗号  
 みんな知ってる[RSA暗号](https://ja.wikipedia.org/wiki/RSA%E6%9A%97%E5%8F%B7)を実装しましょうというもの。これは日本の大学院時代にもやったことがありました。[中国人剰余定理](https://ja.wikipedia.org/wiki/%E4%B8%AD%E5%9B%BD%E3%81%AE%E5%89%B0%E4%BD%99%E5%AE%9A%E7%90%86)、懐かしいです。
 
-上のリンクにもありますがRSA暗号は特定の条件が揃うと脆弱性をついて平文を復号できてしまいます。そこらへんも条件が揃った前提で、合わせて実装する課題でした。
+上のリンクにもありますがRSA暗号は特定の条件が揃うと脆弱性をついて平文を復号できてしまうのですが、それも合わせて実装する課題でした。
 
 (4) SQL Injection  
-セキュリティがガバガバなPHPとJavascriptのファイルがあたえられるので、sqlite上のデータを不正に取得したり上書いちゃったりする課題でした。ガバガバといっても一部の記号だけはきっちりチェックする実装が入っていたりして、実装の間隙を縫って攻撃する感じが面白かったです。
+セキュリティがガバガバなPHPとJavascriptのファイルがあたえられるので、sqlite上のデータを不正に取得したり上書いてしまうという課題。ガバガバといっても一部の文字だけはきっちりチェックする実装が入っていたりして、実装の間隙を縫って攻撃する感じが面白かったです。
 
 テストはMidtermとFinalの2回でしたが、クイズを総復習しておけば7-8割は取れるかなという感じで、かつテストの点数配分が低いのでProjectしっかりこなしておけば問題なかったです。
 
@@ -104,7 +104,7 @@ Grade: プロジェクトほぼ満点で通したこともあってA。
 
 ### ◆ [CS 6250 Computer Networks](https://www.udacity.com/course/computer-networking--ud436) (2018 Spring) 
 
-上記のCS6035と並行して取ったのがこの授業。これも正直講義はすごい単調でした。テストは3回、プロジェクトも7つというなかなかのボリューム。
+上記のCS6035と並行して取ったのがこの授業。こちらも正直講義はすごい単調でした。テストは3回、プロジェクトも7つというなかなかのボリューム。
 
 内容自体はTCP/IP周りの話を非常にライトに総復習していくという感じで、ライトすぎてトピックは面白そうなのに講義を聴いてもそこまで新しい発見がなかったのも残念。個人的にはSoftware Defined Networkとかをもうちょっと深掘りしてくれると良かったのだけど。
 
@@ -134,10 +134,9 @@ Grade: プロジェクトほぼ満点で通したこともあってA。
 - Decision Tree, Romdom Tree
 - Q学習 with Dyna-Q
   
-くらいなので本当にさわりレベルかなと思います。ただそれぞれの実装はoverfittingに最適なleaf sizeとか、bagging、Ensemble learningあたりまでやってくれるので、なんとなく分かった気分になれます <i class="far fa-grin-beam-sweat"></i> 。
+くらいなので本当にさわりレベルかなと思います。ただそれぞれの実装はoverfittingに最適なleaf sizeとか、bagging、Ensemble learningあたりまでやってくれるので、なんとなく分かった気分になれます <i class="far fa-grin-beam-sweat"></i> 
 
-あとこの講義は教授がなかなかお茶目で、飽きずにビデオを最後まで見ることができました。
-う〜ん、将来チャンスがあったら機械学習系やりたいのかどうか、自分でもよくわからないですね。
+あとこの講義は教授がなかなかお茶目で、飽きずにビデオを最後まで見ることができました。う〜ん、将来チャンスがあったら機械学習系やりたいのかどうか、自分でもよくわからないですね。
 
 Grade: プロジェクトもテストも問題なくA。
 
@@ -145,7 +144,7 @@ Grade: プロジェクトもテストも問題なくA。
 
 ### ◆ [CS 6210: Advanced Operating Systems](https://www.udacity.com/course/advanced-operating-systems--ud189) (2018 Fall) 
 
-このクラスはGTOMSCSの中でも最難関の1つとして挙げられることが多いのですが、Introduction to Operating Systemsを受けてからローレベル面白いなあという気持ちがさらに高まってきたのでAdvancedもいってみようということで取りました。
+このクラスはGTOMSCSの中でも難しいクラスの1つとして挙げられることが多いのですが、Introduction to Operating Systemsを受けてからローレベル面白いなあという気持ちがさらに高まってきたのでAdvancedもいってみようということで取りました。
 
 が、今度こそlinuxのOS内部の話に踏み込んでいくのかと思ったら割と歴史上のOSや分散システムの機構をひたすら浅く広くsurveyしまくるというスタイルで、自分の期待していた内容とは違いました。
 また、surveyスタイルの講義ということで学期を通して論文を70-80本くらい読むように指定されるんですが、子どもが成長してきて休みの日も日中はほぼ自分の時間が取れなくなったこと、仕事も忙しくなってきた影響で割と早い時点で断念してしまいました。無念 <i class="far fa-sad-tear"></i>

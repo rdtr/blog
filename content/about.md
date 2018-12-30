@@ -1,7 +1,7 @@
 ---
 title: "About"
 date: 2018-12-30T01:16:46-08:00
-draft: true
+draft: false
 ---
 
 Norio Akagi  

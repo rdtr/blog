@@ -4,7 +4,7 @@ baseURL = "https://blog.rdtr.net/"
 languageCode = "ja"
 title = "Your Mileage May Vary"
 theme = "one"
-googleAnalytics = "UA-123-45"
+googleAnalytics = "UA-50413602-2"
 
 # Chroma Syntax Highlighting
 pygmentsCodefences = true
