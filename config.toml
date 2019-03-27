@@ -1,5 +1,5 @@
 # End your baseURL with a `/` trailing slash, e.g. `https://example.com/`.
-baseURL = "https://blog.rdtr.net/"
+baseURL = "https://blog.redtree.dev/"
 
 languageCode = "ja"
 title = "Your Mileage May Vary"
